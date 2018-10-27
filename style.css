@@ -11,14 +11,14 @@ body {
   }
   
   .div_bg {
-    background-image: url(bg.png);
+    background-image: url(resources/bg.png);
     z-index: 1;
     position: relative;
   }
   
   
   #skeleton {
-    background-image: url(skeleton_empty.png);
+    background-image: url(resources/skeleton_empty.png);
     z-index: 2;
     position: relative;
     height: 85px;
@@ -26,7 +26,7 @@ body {
   }
   
   #skeleton:hover {
-    background-image: url(skeleton_green.png);
+    background-image: url(resources/skeleton_green.png);
   }
   
   nav {
