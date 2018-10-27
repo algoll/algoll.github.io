@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+  }
+  
+  #over div {
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .div_bg {
+    background-image: url(bg.png);
+    z-index: 1;
+    position: relative;
+  }
+  
+  
+  #skeleton {
+    background-image: url(skeleton_empty.png);
+    z-index: 2;
+    position: relative;
+    height: 85px;
+    width: 227px;
+  }
+  
+  #skeleton:hover {
+    background-image: url(skeleton_green.png);
+  }
+  
+  nav {
+    position: absolute;
+  }
+  
+  nav ul {
+    
+  }

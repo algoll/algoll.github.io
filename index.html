@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,25 +9,31 @@
     <meta name="description" content="Signature">
     <meta name="urlucidfall" content="SitePoint">
 
+    <script>
+        $('button').on('click', function () {
+            $('body').toggleClass('open');
+        });
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
 
-    <center>
-        <div style="background: url(https://picua.org/images/2018/10/09/3ffa62ec01d6b8cf032cf6e832c5375f.jpg) no-repeat top center; width: 450px; height: 140px; position: relative;">
-            <div style="display: table; background-color: rgb(0, 0, 0, 0.7); width: 450px; height: 35px; position: absolute; bottom: 0; overflow: hidden;">
-                <div style="display: table-cell; color: #a28056; vertical-align: middle; text-align: center;"><abbr
-                          title="Цветет и пахнет" style="color: #a28056">Состояние</abbr>
-                    | <a href="http://www.amalirr.com/t1616-topic"
-                       style="color: #a28056; text-decoration: none;">Анкета</a>
-                    | <a href="http://www.amalirr.com/t1627-topic"
-                       style="color: #a28056; text-decoration: none;">Инвентарь</a>
-                    | <a href="http://www.amalirr.com/t1636-topic"
-                       style="color: #a28056; text-decoration: none;">Хроника</a>
-                </div>
-            </div>
+    <div id="over" style="height: 100%; width: 100%; position: relative;">
+        <div id="skeleton"></div>
+        <div class="div_bg" style="height: 253px; width: 533px; margin-top: -39px;">
+            <nav>
+                <ul class="menu">
+                    <li data-text="anketa">Анкета</li>
+                    <li data-text="chronice">Хроника</li>
+                    <li data-text="inventory">Инвентарь</li>
+                </ul>
+            </nav>
         </div>
-    </center>
+    </div>
 
 </body>
 
