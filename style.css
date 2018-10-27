@@ -1,38 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 body {
-    margin: 0;
-  }
-  
-  #over div {
-    left: 0;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  
-  .div_bg {
-    background-image: url(resources/bg.png);
-    z-index: 1;
-    position: relative;
-  }
-  
-  
-  #skeleton {
-    background-image: url(resources/skeleton_empty.png);
-    z-index: 2;
-    position: relative;
-    height: 85px;
-    width: 227px;
-  }
-  
-  #skeleton:hover {
-    background-image: url(resources/skeleton_green.png);
-  }
-  
-  nav {
-    position: absolute;
-  }
-  
-  nav ul {
-    
-  }
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+#over div {
+  left: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.div_bg {
+  background-image: url(bg.png);
+  z-index: 1;
+  position: relative;
+}
+
+
+
+#skeleton {
+  background-image: url(skeleton_empty.png);
+  z-index: 2;
+  position: relative;
+  height: 85px;
+  width: 227px;
+}
+
+#skeleton:hover {
+  background-image: url(skeleton_green.png);
+}
+
+/* NAVIGATION PANEL */
+nav {
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding: 37px 10px;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a {
+  position: relative;
+}
+nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ffffff;
+  height: 2px;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
